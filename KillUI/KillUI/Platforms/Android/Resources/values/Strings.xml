@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+	<string name="ApplicationName">KillUI</string>
+
+	<string name="channel_id">98765</string>
+	<string name="channel_name">KillUI_Activities</string>
+	<string name="channel_description">Foreground Activities Processing</string>
+</resources>

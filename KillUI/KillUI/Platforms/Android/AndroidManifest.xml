@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true">
+
+	<service android:name=".ForegroundService" android:foregroundServiceType="location|camera|microphone" />
+
+	<activity android:name="launchmode" android:launchMode="singleTask" />
+	</application>
+	
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+	<queries>
+		<intent>
+			<action android:name="android.intent.action.TTS_SERVICE" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.MAIN_ACTIVITY" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.RESTART_SERVICE" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.STOP_SERVICE" />
+		</intent>
+	</queries>
+</manifest>
